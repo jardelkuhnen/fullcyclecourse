@@ -2,14 +2,14 @@
 type Category {
   id: ID!
   name: String!
-  description: String
+  description: String!
   courses: [Course!]!
 }
 
 type Course {
   id: ID!
   name: String!
-  description: String
+  description: String!
   category: Category!
 }
 
@@ -20,7 +20,7 @@ input NewCategory {
 
 input NewCourse {
     name: String!
-    description: String
+    description: String!
     categoryId: ID!
 }
 
